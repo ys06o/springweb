@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>메인페이지</h3>
+<p>http://ip주소:was번호/(static)이하 폴더 경로로</p>
+
+
+<h3>종합예제9</h3>
+<div>
+    <div>
+        <h3>입력구역</h3>
+        내용:<input id="bcontent"><br />
+        작성자:<input id="bwriter"><br />
+        <button onclick="onWrite()">등록하기</button>
+    </div>
+    <div>
+        <h3>출력구역</h3>
+        <table id="boardTable">
+            <thead>
+                <tr> 
+                <th>번호</th>
+                <th>내용</th>
+                <th>작성자</th>
+                <th>작성일</th>
+                <th>비고</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>안녕</td><td>유재석</td>
+                <td>2027-23-23</td>
+                <td>
+                    <button>삭제</button>
+                <button>내용수정</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>    
+<script src="board.js"></script>
+
+</body>
+</html>
