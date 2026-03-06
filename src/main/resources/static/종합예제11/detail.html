@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>게시물 상세페이지</h3>
+<a href="/종합예제11/index.html">뒤로가기</a>
+<div id="boardBox">
+    제목:<div>제목이 들어갈 자리</div>
+    작성자/작성일:<div>작성자가 들어갈 자리/작성일이 들어갈 자리</div>
+    내용:<div>내용이 들어갈 자리</div>
+    <button onclick="수정()">수정</button>
+    <button onclick="삭제()">삭제</button>
+</div>
+
+<div id="replyBox">
+    <div>
+        댓글작성자 : <input id="cwriter">
+        댓글내용 :<textarea id="ccontent"> </textarea>
+        <button onclick="댓글등록()">댓글등록</button>
+    </div>
+    <div>
+        <div style="margin: 20px 0px;">
+            <div><span>유재석</span><span>2026-03-06</span><span> <button>수정</button> <button>삭제</button></span></div>
+            <div> 댓글내용 자리 </div>
+        </div>
+        <div style="margin: 20px 0px;">
+            <div><span>유재석</span><span>2026-03-06</span><span> <button>수정</button> <button>삭제</button></span></div>
+            <div> 댓글내용 자리 </div>
+        </div>
+        <div style="margin: 20px 0px;">
+            <div><span>유재석</span><span>2026-03-06</span><span> <button>수정</button> <button>삭제</button></span></div>
+            <div> 댓글내용 자리 </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="detail.js"></script>
+
+</body>
+</html>
