@@ -5,11 +5,14 @@
     <title>Title</title>
 </head>
 <body>
-<button>출석등록</button>
+<form action="">
+    훈련생명<input type="text" name="" id="studentName">
+<button type="button" onclick="post()">출석등록</button>
+</form>
     <button onclick="getAll()">출석 전체조회</button>
-    <button onclick="get()">출석 개별조회</button>
-    <button>출석 삭제</button>
-    <button>출석 수정</button>
+    <button onclick="get(1)">출석 개별조회</button>
+    <button onclick="del()">출석 삭제</button>
+    <button onclick="put()">출석 수정</button>
 
 
 <p id="test">></p>

@@ -4,58 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a7dcdec-26a7-4e4f-aefa-30fc6f50a9b9" name="Changes" comment="3-5일">
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/day06/entity/AppStart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/day06/entity/BaseTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/day06/entity/GoodsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/day06/entity/GoodsDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/day06/entity/GoodsEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/day06/entity/GoodsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/day06/entity/GoodsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/day06/entity/sample.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/day06/practice6/AppStart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/day06/practice6/BaseTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/day06/practice6/MovieController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/day06/practice6/MovieDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/day06/practice6/MovieEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/day06/practice6/MovieRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/day06/practice6/MovieService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/day06/practice6/문제.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/종합/예제10/board/AppStart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/종합/예제10/board/controller/BoardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/종합/예제10/board/controller/CommentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/종합/예제10/board/dto/BoardDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/종합/예제10/board/dto/CommentDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/종합/예제10/board/entity/BaseTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/종합/예제10/board/entity/BoardEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/종합/예제10/board/entity/CommentEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/종합/예제10/board/repository/BoardRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/종합/예제10/board/repository/CommentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/종합/예제10/board/service/BoardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/종합/예제10/board/service/CommentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/종합예제11/comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/종합예제11/detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/종합예제11/detail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/종합예제11/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/종합예제11/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/종합예제11/write.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/종합예제11/write.js" afterDir="false" />
+    <list default="true" id="7a7dcdec-26a7-4e4f-aefa-30fc6f50a9b9" name="Changes" comment="3-6일 push">
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/day03/practice3/AttendanceDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/종합/예제8/Appstart.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/종합/예제8/controller/BoardController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/종합/예제8/etc/database.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/종합/예제8/model/dao/BoardDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/종합/예제8/model/dto/BoardDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/종합/예제9/AppStart.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/종합/예제9/controller/BoardController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/종합/예제9/model/dao/BoardDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example/종합/예제9/model/dto/BoardDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/example/day03/practice3/AttendanceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/day03/practice3/AttendanceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/example/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/example/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/example/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/example/test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -120,10 +85,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
-        <option value="Interface" />
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="Interface" />
+        <option value="package-info" />
+        <option value="JUnit5 Test Class" />
+        <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -139,7 +106,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/ys06o/springweb.git&quot;,
-    &quot;accountId&quot;: &quot;a524c876-0981-4508-9a21-c9f1efbbb003&quot;
+    &quot;accountId&quot;: &quot;d04461c3-cd06-40a8-8992-0799397f228c&quot;
   }
 }</component>
   <component name="McpProjectServerCommands">
@@ -159,21 +126,29 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "Downloaded.Files.Path.Enabled": "false",
     "Gradle.Build springweb.executor": "Run",
     "Gradle.Download Sources.executor": "Run",
     "Gradle.springweb [:AppStart.main()].executor": "Run",
     "Gradle.springweb [:Appstart.main()].executor": "Run",
     "Gradle.springweb [:example.day02.practice2.AppStart.main()].executor": "Run",
+    "Gradle.springweb [:example.day07.자바참조.Exam1.main()].executor": "Run",
     "Gradle.springweb [:example.종합.예제9.AppStart.main()].executor": "Run",
     "Gradle.springweb 빌드.executor": "Run",
+    "HTTP Request.BookExamAppStart | #1.executor": "Run",
+    "HTTP Request.BookExamAppStart | #2.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Node.js..executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -184,7 +159,13 @@
     "Spring Boot.AppStart (3).executor": "Run",
     "Spring Boot.AppStart (4).executor": "Run",
     "Spring Boot.AppStart.executor": "Run",
+    "Spring Boot.BookExamAppStart.executor": "Run",
+    "Spring Boot.Day08AppStart.executor": "Run",
+    "Spring Boot.Practice7AppStart.executor": "Run",
+    "Spring Boot.ThymeLeafApp.executor": "Debug",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
@@ -198,7 +179,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.fileTypes",
+    "settings.editor.selected.configurable": "advanced.settings",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -209,7 +190,17 @@
       <recent name="C:\Users\Kim\Desktop\springweb\src\main\java\example\종합\예제8\etc" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kim\Desktop\springweb\src\main\resources" />
       <recent name="C:\Users\Kim\Desktop\springweb\src\main\resources\static" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="example.bookexam.controller" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="example.day08" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -223,13 +214,19 @@
     </option>
     <option name="configurationStatuses">
       <map>
+        <entry key="HttpClient.HttpRequestRunConfigurationType">
+          <value>
+            <map>
+              <entry key="BookExamAppStart | #2" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
         <entry key="SpringBootApplicationConfigurationType">
           <value>
             <map>
               <entry key="AppStart" value="STOPPED" />
-              <entry key="AppStart (1)" value="STOPPED" />
-              <entry key="AppStart (3)" value="STOPPED" />
-              <entry key="AppStart (4)" value="FAILED" />
+              <entry key="BookExamAppStart" value="STOPPED" />
+              <entry key="Day08AppStart" value="STOPPED" />
             </map>
           </value>
         </entry>
@@ -237,54 +234,44 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.AppStart">
-    <configuration type="NodeJSConfigurationType" temporary="true" path-to-js-file="detail.js" working-dir="$PROJECT_DIR$/src/main/resources/static/종합예제11">
+    <configuration name="BookExamAppStart | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/BookExamAppStart.http" executionIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="AppStart (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="springweb.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="종합.예제10.AppStart" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="종합.예제10.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AppStart (3)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="springweb.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="example.day06.practice6.AppStart" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="example.day06.practice6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AppStart (4)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="springweb.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="종합.종합.예제10.AppStart" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="종합.종합.예제10.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="BookExamAppStart | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/BookExamAppStart.http" executionIdentifier="#2" index="2" runType="Run single request">
+      <method v="2" />
     </configuration>
     <configuration name="AppStart" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="springweb.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="종합.예제10.board.AppStart" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="example.day03.practice3.AppStart" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="종합.예제10.board.*" />
+          <option name="PATTERN" value="example.day03.practice3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookExamAppStart" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springweb.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="example.bookexam.BookExamAppStart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example.bookexam.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day08AppStart" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springweb.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="example.day08.Day08AppStart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example.day08.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -295,10 +282,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.AppStart" />
-        <item itemvalue="Node.js." />
-        <item itemvalue="Spring Boot.AppStart (1)" />
-        <item itemvalue="Spring Boot.AppStart (4)" />
-        <item itemvalue="Spring Boot.AppStart (3)" />
+        <item itemvalue="Spring Boot.BookExamAppStart" />
+        <item itemvalue="HTTP Request.BookExamAppStart | #2" />
+        <item itemvalue="HTTP Request.BookExamAppStart | #1" />
+        <item itemvalue="Spring Boot.Day08AppStart" />
       </list>
     </recent_temporary>
   </component>
@@ -325,7 +312,16 @@
       <workItem from="1772499344071" duration="15121000" />
       <workItem from="1772526147971" duration="3523000" />
       <workItem from="1772584370372" duration="44014000" />
-      <workItem from="1772761987182" duration="23152000" />
+      <workItem from="1772761987182" duration="23394000" />
+      <workItem from="1772883584183" duration="86000" />
+      <workItem from="1772890573866" duration="173000" />
+      <workItem from="1772891742219" duration="3006000" />
+      <workItem from="1772987123311" duration="30586000" />
+      <workItem from="1773112680728" duration="952000" />
+      <workItem from="1773132280169" duration="608000" />
+      <workItem from="1773189314872" duration="11623000" />
+      <workItem from="1773307174594" duration="64000" />
+      <workItem from="1773362472308" duration="15899000" />
     </task>
     <task id="LOCAL-00001" summary="2-25">
       <option name="closed" value="true" />
@@ -343,7 +339,31 @@
       <option name="project" value="LOCAL" />
       <updated>1772670074698</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="3-6일 push">
+      <option name="closed" value="true" />
+      <created>1772788900927</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1772788900928</updated>
+    </task>
+    <task id="LOCAL-00004" summary="3-6일 push">
+      <option name="closed" value="true" />
+      <created>1772788931600</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1772788931600</updated>
+    </task>
+    <task id="LOCAL-00005" summary="3-6일 push">
+      <option name="closed" value="true" />
+      <created>1773381435046</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1773381435046</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,7 +372,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2-25" />
     <MESSAGE value="3-5일" />
-    <option name="LAST_COMMIT_MESSAGE" value="3-5일" />
+    <MESSAGE value="3-6일 push" />
+    <option name="LAST_COMMIT_MESSAGE" value="3-6일 push" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
