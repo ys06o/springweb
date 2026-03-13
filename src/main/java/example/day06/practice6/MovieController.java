@@ -13,7 +13,7 @@ public class MovieController {
     @Autowired
     private MovieService movieService;
     //영화 등록 기능
-    @PostMapping()
+    @PostMapping
     public boolean 등록(@RequestBody MovieDto movieDto){
         boolean result= movieService.등록(movieDto);
         return result;
@@ -23,6 +23,10 @@ public class MovieController {
 
     //수정
 
+    @PutMapping("/{movieId}")
+    public MovieDto 수정하기(@PathVariable int movieId,@RequestBody MovieDto movieDto) {
+        return movieService.수정하기(movieId,movieDto);
+    }
 
 
     //삭제
@@ -37,6 +41,12 @@ public class MovieController {
     @GetMapping
     public List<MovieDto> 전체조회(){
         List<MovieDto> result=movieService.전체조회();
+        return result;
+    }
+
+    @GetMapping("/detail")
+    public MovieDto 개별조회(@RequestParam int bookId){
+        MovieDto result=movieService.개별조회(bookId);
         return result;
     }
 

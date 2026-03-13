@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class MovieService {
@@ -20,7 +21,20 @@ public class MovieService {
 
 
     //영화 수정
+    public MovieDto 수정하기(int movieId, MovieDto movieDto) {
+        Optional<MovieEntity> movieEntity=movieRepository.findById(movieId);
+        if(movieEntity.isPresent()){
+            MovieEntity entity=movieEntity.get();
+            entity.setDirector(movieDto.getDirector());
+            entity.setRating(movieDto.getRating());
+            entity.setTitle(movieDto.getTitle());
+            entity.setReleasedate(movieDto.getReleasedate());
 
+            movieRepository.save(entity);
+            return entity.toDto();
+        }
+        return null;
+    } //class end
 
 
 
@@ -30,9 +44,20 @@ public class MovieService {
         return true;
     }
 
-    //영화 조회
+    //영화 개별 조회
+    public MovieDto 개별조회(int bookId){
+         Optional<MovieEntity> movie =movieRepository.findById(bookId);
+         if(movie.isPresent()){
+             //존재하면?
+             MovieEntity entity = movie.get();
+             return entity.toDto();
+         }
+         else{
+             return null;
+         }
+    }
 
-    //이거 조회
+    //전체 조회
     public List<MovieDto> 전체조회() {
         //1.db에서 모든 영화목록을 엔티티로 가져옴
         List<MovieEntity> movieEntities=movieRepository.findAll();
