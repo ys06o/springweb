@@ -29,7 +29,7 @@ public class AttendanceController {
         AttendanceDto attendanceDto = new AttendanceDto(2, "김용성", "2022-12-11", "출석");
         return attendanceDto;
     }
-
+    //
 
     @DeleteMapping
     public boolean 출석삭제(@RequestParam int ano){
