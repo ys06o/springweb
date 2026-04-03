@@ -1,14 +1,12 @@
-import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
-import './index.css';
-
-// 실행할 컴포넌트 import
-import App from './Life-Cycle/App';
-
+import { createRoot } from 'react-dom/client'
+// ** index.html 에서 root 가져오기 **
 const root = document.querySelector('#root');
 
-createRoot(root).render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
-);
+// reactweb
+import App from './reactweb/App';
+import {BrowserRouter} from 'react-router-dom'
+createRoot( root ).render(
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
+)

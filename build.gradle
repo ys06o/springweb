@@ -20,7 +20,7 @@ repositories {
 
 dependencies { //외부 라이브러리들 추가하는곳, 추가된 라이브러리는 자동으로 설치된다.
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    implementation 'org.springframework.boot:spring-boot-starter-webmvc'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'//1.SpringBoot Web
     runtimeOnly 'com.mysql:mysql-connector-j' //2.MYSQL
