@@ -19,14 +19,20 @@ repositories {
 }
 
 dependencies { //외부 라이브러리들 추가하는곳, 추가된 라이브러리는 자동으로 설치된다.
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.boot:spring-boot-starter-actuator'
-    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'//1.SpringBoot Web
-    runtimeOnly 'com.mysql:mysql-connector-j' //2.MYSQL
-    compileOnly 'org.projectlombok:lombok' //3.lombok
-    annotationProcessor 'org.projectlombok:lombok' //4.lombok
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.boot:spring-boot-starter-webmvc' // 1]SpringBoot Web
+    runtimeOnly 'com.mysql:mysql-connector-j'       // 2] mySQL VS H2(인메모리)
+    compileOnly 'org.projectlombok:lombok'          // 3] Lombok
+    annotationProcessor 'org.projectlombok:lombok'  // 3] Lombok
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa' // 4] JPA
+    implementation 'org.jsoup:jsoup:1.22.1' // 5] Jsoup ( 정적페이지 크롤링 )
+    implementation 'org.seleniumhq.selenium:selenium-java:4.41.0' // 6] 셀레니움 ( 동적페이지 크롤링 )
+    implementation 'io.github.bonigarcia:webdrivermanager:6.3.3' // 7] 셀레니움( 크롬브라우저 조작 )
+    implementation 'org.springframework.boot:spring-boot-starter-webflux' // 8] HTTP 요청
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.21.1' // 9] XML 파싱
+    implementation 'org.springframework.security:spring-security-crypto:6.4.4' // 10] 비크립트
+    implementation 'io.jsonwebtoken:jjwt-api:0.12.6' // 11] JWT
+    runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.12.6' // 11] JWT
+    runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.12.6' // 11] JWT
 
 
 }

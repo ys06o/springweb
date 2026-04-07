@@ -1,54 +1,97 @@
 package 종합.예제10.board.controller;
 
-import lombok.Getter;
-import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.servlet.http.HttpSession;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import 종합.예제10.board.dto.BoardDto;
 import 종합.예제10.board.service.BoardService;
-
-import java.util.List;
+import 종합.예제10.member.service.JWTService;
 
 @RestController
+@RequiredArgsConstructor
+@RequestMapping("/api/board")
+@CrossOrigin( value = "http://localhost:5173",exposedHeaders = "Authorization",allowCredentials = "true")
 public class BoardController {
-    @Autowired
-    private BoardService boardService;
+    private final BoardService boardService;
+    private final JWTService jwtService;
 
-    // 1. 등록
-    @PostMapping("/board")
-    public boolean 등록(@RequestBody BoardDto boardDto) {
-        boolean result = boardService.등록(boardDto);
-        return result;
-    } // f end
+    // [1-1] 회원제 글등록 + 세션 정보
+    @PostMapping("/write")
+    public ResponseEntity<?> write(@RequestBody BoardDto boardDto, HttpSession session ){
+        // 1) 세션내 로그인정보 확인
+        Object object = session.getAttribute("loginMid");
+        if( object == null ){ return ResponseEntity.ok( false ); } // 만약에 비로그인이면 글쓰기 실패
+        // 2) 로그인 중이면
+        String loginMid = (String)object;
+        // 3) 서비스에게 입력받은 값과 세션에 저장된 값 전달한다.
+        boolean result = boardService.write( boardDto , loginMid );
+        return  ResponseEntity.ok( result );
+    }
 
-    //2.전체조회
-    @GetMapping("/board")
-    public List<BoardDto> 전체조회() {
-        List<BoardDto> result = boardService.전체조회();
-        return result;
+    // [1-2] 회원제 글등록 + 토큰 정보
+    @PostMapping("/write2")
+    public ResponseEntity<?> write2( @RequestBody 종합.예제10.board.dto.BoardDto boardDto ,
+            @RequestHeader("Authorization") String token ){
+        // 1) 매개변수로 jwt토큰 받는다.
+        // 2) 만약에 토큰이 없거나 Bearer 시작하지 않으면 , 문자열.startsWith( "시작문자" ) : 문자열내 시작문자가 존재하면 true
+        if( token == null || !token.startsWith("Bearer") ) {
+            return ResponseEntity.ok( false ); // 비로그인 이라서 글쓰기 실패
+        }
+        // * 토큰만 추출
+        token = token.replace("Bearer " , "");
+        // 3) 토큰에서 클레임(값) 꺼내기
+        String loginMid = jwtService.getClaim( token );
+        if( loginMid == null ){ return ResponseEntity.ok(false); }
+        // 4) 서비스에게 입력받은 값과 세션에 저장된 값 전달한다.
+        boolean result = boardService.write( boardDto , loginMid );
+        return  ResponseEntity.ok( result );
+    }
+
+    // [1-3] 회원제 글등록 + 토큰 정보 + 첨부파일( content-Type : multipart/form-data 변경 )
+//    @PostMapping("/write3")
+//    public ResponseEntity<?> write3(종합.예제10.board.dto.BoardDto boardDto , @RequestHeader("Authorization") String token ){
+//        // 달라진점1] @RequestBody 사용하지 않는다. 왜? 첨부파일 매핑하기 위해
+//        // 달라진점2] dto에 MultipartFile 인터페이스 포함한다. private MultipartFile uploadFile; // 업로드용도
+//        if( token == null || !token.startsWith("Bearer") ) {
+//            return ResponseEntity.ok( false );
+//        }
+//        token = token.replace("Bearer " , "");
+//        String loginMid = jwtService.getClaim( token );
+//        if( loginMid == null ){ return ResponseEntity.ok(false); }
+//        boolean result = boardService.write( boardDto , loginMid );
+//        return  ResponseEntity.ok( result );
+//    }
+
+
+    //[1-4]쿠키 방식으로
+    @PostMapping("/write4")
+    public ResponseEntity<?> write3(BoardDto boardDto , @CookieValue(value = "token",required = false) String token){
+
+        if( token == null) {
+            return ResponseEntity.ok( false );
+        }
+        String loginMid = jwtService.getClaim( token );
+        if( loginMid == null ){ return ResponseEntity.ok(false); }
+        boolean result = boardService.write( boardDto , loginMid );
+        return  ResponseEntity.ok( result );
     }
 
 
-    //3.개별조회
-    @GetMapping("/board/detail")
-    public BoardDto 개별조회(@RequestParam int bno) {
-        BoardDto result = boardService.개별조회(bno);
-        return result;
-    }
 
-
-    //4.게시물 수정
-    @PutMapping("/board")
-    public boolean 개별수정(@RequestBody BoardDto boardDto) {
-        boolean result=boardService.개별수정(boardDto);
-        return result;
-    }
-
-
-    //5.게시물 삭제
-    @DeleteMapping("/board")
-    public boolean 개별삭제(@RequestParam int bno) {
-        boolean result=boardService.개별삭제(bno);
-        return result;
-    }
 
 } //class end
+
+
+
+
+
+
+
+
+
+
+
+
+
+

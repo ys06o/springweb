@@ -1,0 +1,74 @@
+package 종합.예제10.member.controller;
+
+import jakarta.servlet.http.HttpSession;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequiredArgsConstructor
+@RequestMapping("/api/member")
+@CrossOrigin( value = "http://localhost:5173")
+public class MemberController {
+
+    private final 종합.예제10.member.service.MemberService memberService;
+
+    // [1] 회원가입 post = create = save
+    @PostMapping("/signup")
+    public ResponseEntity<?> signup(@RequestBody 종합.예제10.member.dto.MemberDto memberDto ){
+        return ResponseEntity.ok( memberService.signup( memberDto ) );
+    }
+
+    // [2] 로그인 post = select = find
+    @PostMapping("/login")
+    public ResponseEntity<?> login(@RequestBody 종합.예제10.member.dto.MemberDto loginDto , HttpSession session ){
+        // 1] 입력받은 아이디/비밀번호를 서비스에게 보낸다.
+        boolean result = memberService.login( loginDto );
+        // 2] 만약에 로그인 성공이면 세션 부여
+        if( result ) {
+            // 1) 매개변수에 HttpSession session 받는다.
+            // 2) 로그인 성공한 회원의아이디를 세션객체내 저장 , .setAttribute( "속성명" , 속성값 );
+            session.setAttribute("loginMid", loginDto.getMid());
+        }
+        // 3] 아니면 실패
+        return ResponseEntity.ok( result );
+    }
+
+    // [3] 로그아웃 == GET == 세션 초기화
+    @GetMapping("/logout")
+    public ResponseEntity<?> logout( HttpSession session ){
+        // 1) 매개변수에 HttpSession session 받는다.
+        // 2) 특정한 속성명으로 세션객체내 속성 삭제, session.removeAttribute( "삭제할속성명" );
+        session.removeAttribute( "loginMid" );
+        // 3) 반환
+        return ResponseEntity.ok( true );
+    }
+
+    // [4] 마이페이지 == GET == 현재로그인된회원정보 == 세션저장된정보로조회
+    @GetMapping("/my/info")
+    public ResponseEntity<?> myInfo( HttpSession session ){
+        // 1) 로그인상태 꺼내기 *모든 세션객체내 속성값은 Object 타입이다 *
+        Object obj = session.getAttribute("loginMid");
+        // 2) 로그인상태가 존재하지 않으면 비로그인상태
+        if( obj == null ){ return ResponseEntity.ok( false ); }
+        // 3) 로그인상태이면 , Object --> String
+        String loginMid = (String)obj;
+        // 4) 로그인된 mid로 서비스에게 전달하여 로그인된mid의 dto 반환
+        return ResponseEntity.ok( memberService.myinfo( loginMid ) );
+    }
+
+
+} // class end
+
+
+
+
+
+
+
+
+
+
+
+
+

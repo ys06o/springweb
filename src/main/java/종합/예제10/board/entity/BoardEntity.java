@@ -1,38 +1,36 @@
 package 종합.예제10.board.entity;
 
-
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import 종합.예제10.board.dto.BoardDto;
+import 종합.예제10.member.entity.MemberEntity;
 
-@AllArgsConstructor
-@NoArgsConstructor
-@Data
-@Builder // 롬복
-@Entity
-@Table(name = "board")
-public class BoardEntity extends BaseTime {
-    @Id // PK
-    @GeneratedValue( strategy = GenerationType.IDENTITY ) // auto_increment
-    private Integer bno;
-    @Column( length = 255, nullable = false  ) // not null
-    private String btitle;
-    @Column( columnDefinition = "longtext not null") // 직접 SQL 설정
-    private String bcontent;
-    @Column( length = 30 , nullable = false ) // not null
-    private String bwriter;
-    // + 생성/수정 날짜/시간은 BaseTime 으로 상속받기
+@Entity @Table(name = "board")
+@NoArgsConstructor @AllArgsConstructor @Data @Builder
+public class BoardEntity extends 종합.예제10.member.entity.BaseTime {
+    @Id
+    @GeneratedValue( strategy = GenerationType.IDENTITY)
+    private Long bno; // 게시물번호
 
-    // + entity --> dto 변환함수 : 주로 조회 +
-    public BoardDto toDto(){
-        return BoardDto.builder()
-                .bno( bno ).btitle( btitle )
-                .bcontent( bcontent ).bwriter( bwriter )
-                .createDate( getCreateDate().toString() )
-                .updateDate( getUpdateDate().toString() )
+    @Column( nullable = false , length = 255 )
+    private String btitle; // 게시물제목
+
+    @Column( nullable = false , columnDefinition = "longtext" )
+    private String bcontent; // 게시물내용
+
+    @Column( nullable = true , length = 255 ) // 주로 첨부파일은 파일자체를 저장하는게 아니라. 파일의위치(서버내경로) 저장
+    private String bfile; // 게시물첨부파일 , 만약에 게시물당 첨부파일 여러개이면 엔티티 분리
+
+    // + 단방향 : 한명의 회원이 여러개 게시물 작성한다. 1:N
+    @ManyToOne @JoinColumn( name = "mno") @ToString.Exclude
+    private MemberEntity memberEntity;
+
+    // + toDto : 주로 조회할때
+    public BoardDto toDto( ){
+        return 종합.예제10.board.dto.BoardDto.builder()
+                .bno( bno ).btitle( btitle ).bcontent( bcontent ).bfile( bfile )
+                .mno( memberEntity.getMno() ) // 작성자FK의 회원번호
+                .mname( memberEntity.getMname() ) // 작성자FK의 닉네임
                 .build();
     }
 }
