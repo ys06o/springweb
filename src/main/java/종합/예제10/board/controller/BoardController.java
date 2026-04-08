@@ -78,7 +78,19 @@ public class BoardController {
     }
 
 
+    //[2]전체 조회
+    @GetMapping("/list")
+    public ResponseEntity<?> findAll() {
+        return ResponseEntity.ok(boardService.findAll());
+    }
 
+
+
+    //[3]개별 조회
+    @GetMapping("/view")
+    public ResponseEntity<?> findById(@RequestParam Long bno) {
+        return ResponseEntity.ok(boardService.findById(bno));
+    }
 
 } //class end
 

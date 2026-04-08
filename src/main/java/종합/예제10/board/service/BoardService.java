@@ -2,8 +2,13 @@ package 종합.예제10.board.service;
 
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestParam;
+import 종합.예제10.board.dto.BoardDto;
+import 종합.예제10.board.entity.BoardEntity;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service @Transactional @RequiredArgsConstructor
@@ -33,6 +38,21 @@ public class BoardService {
         종합.예제10.board.entity.BoardEntity savedEntity = boardRepository.save( saveEntity ); // 2] entity 저장한다.
         if( savedEntity.getBno() > 0 ){ return true; }
         else{ return false; }
+    }
+
+
+    //[2]전체 조회
+    public List<BoardDto> findAll() {
+        return boardRepository.findAll(Sort.by(Sort.Direction.DESC,"bno"))
+                .stream().map(BoardEntity::toDto).toList();
+    }
+
+
+
+    //[3]개별 조회
+    public BoardDto findById(@RequestParam Long bno) {
+        return boardRepository.findById(bno).orElse(null)
+                .toDto();
     }
 
 } // class end

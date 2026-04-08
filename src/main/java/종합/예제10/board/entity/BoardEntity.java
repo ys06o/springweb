@@ -31,6 +31,7 @@ public class BoardEntity extends 종합.예제10.member.entity.BaseTime {
                 .bno( bno ).btitle( btitle ).bcontent( bcontent ).bfile( bfile )
                 .mno( memberEntity.getMno() ) // 작성자FK의 회원번호
                 .mname( memberEntity.getMname() ) // 작성자FK의 닉네임
+                .createDate(getCreateDate().toString())
                 .build();
     }
 }

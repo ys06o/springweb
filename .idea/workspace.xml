@@ -4,35 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a7dcdec-26a7-4e4f-aefa-30fc6f50a9b9" name="Changes" comment="3-6일 push">
-      <change afterPath="$PROJECT_DIR$/src/main/java/종합/예제10/board/service/FileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/종합/예제10/member/controller/MemberController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/종합/예제10/member/controller/MemberController2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/종합/예제10/member/controller/MemberController3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/종합/예제10/member/dto/MemberDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/종합/예제10/member/entity/BaseTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/종합/예제10/member/entity/MemberEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/종합/예제10/member/repository/MemberRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/종합/예제10/member/service/JWTService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/종합/예제10/member/service/MemberService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/react/src/reactweb/components/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/react/src/reactweb/pages/member/Signup.jsx" afterDir="false" />
+    <list default="true" id="7a7dcdec-26a7-4e4f-aefa-30fc6f50a9b9" name="Changes" comment="4-7">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/종합/예제10/board/AppStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/종합/예제10/AppStart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/종합/예제10/board/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/종합/예제10/board/controller/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/종합/예제10/board/controller/CommentController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/종합/예제10/board/dto/BoardDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/종합/예제10/board/dto/BoardDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/종합/예제10/board/dto/CommentDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/종합/예제10/board/entity/BaseTime.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/종합/예제10/board/entity/BoardEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/종합/예제10/board/entity/BoardEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/종합/예제10/board/entity/CommentEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/종합/예제10/board/repository/BoardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/종합/예제10/board/respository/BoardRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/종합/예제10/board/repository/CommentRepository.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/종합/예제10/board/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/종합/예제10/board/service/BoardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/종합/예제10/board/service/CommentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/react/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/react/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/react/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/react/src/reactweb/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/react/src/reactweb/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/react/src/reactweb/pages/member/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/react/src/reactweb/pages/member/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/react/src/reactweb/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/react/src/reactweb/components/Header.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,68 +120,68 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Gradle.Build springweb.executor": "Run",
-    "Gradle.Download Sources.executor": "Run",
-    "Gradle.springweb [:AppStart.main()].executor": "Run",
-    "Gradle.springweb [:Appstart.main()].executor": "Run",
-    "Gradle.springweb [:example.day02.practice2.AppStart.main()].executor": "Run",
-    "Gradle.springweb [:example.day07.자바참조.Exam1.main()].executor": "Run",
-    "Gradle.springweb [:example.종합.예제9.AppStart.main()].executor": "Run",
-    "Gradle.springweb [:종합.예제10.AppStart.main()].executor": "Run",
-    "Gradle.springweb 빌드.executor": "Run",
-    "HTTP Request.BookExamAppStart | #1.executor": "Run",
-    "HTTP Request.BookExamAppStart | #2.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Node.js..executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.APPStart (1).executor": "Run",
-    "Spring Boot.APPStart.executor": "Run",
-    "Spring Boot.AppStart (1).executor": "Run",
-    "Spring Boot.AppStart (2).executor": "Run",
-    "Spring Boot.AppStart (3).executor": "Run",
-    "Spring Boot.AppStart (4).executor": "Run",
-    "Spring Boot.AppStart.executor": "Run",
-    "Spring Boot.BookExamAppStart.executor": "Run",
-    "Spring Boot.Day08AppStart.executor": "Run",
-    "Spring Boot.Practice7AppStart.executor": "Run",
-    "Spring Boot.ThymeLeafApp.executor": "Debug",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/sku-102-17/Desktop/springweb",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.editor",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Gradle.Build springweb.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.springweb [:AppStart.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.springweb [:Appstart.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.springweb [:example.day02.practice2.AppStart.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.springweb [:example.day07.자바참조.Exam1.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.springweb [:example.종합.예제9.AppStart.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.springweb [:종합.예제10.AppStart.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.springweb 빌드.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.BookExamAppStart | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.BookExamAppStart | #2.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Node.js..executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.APPStart (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.APPStart.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.AppStart (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.AppStart (2).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.AppStart (3).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.AppStart (4).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.AppStart.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.BookExamAppStart.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Day08AppStart.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Practice7AppStart.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ThymeLeafApp.executor&quot;: &quot;Debug&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sku-102-17/Desktop/springweb&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="종합.종합예제1.service" />
@@ -343,7 +323,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773381435046</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="4-7">
+      <option name="closed" value="true" />
+      <created>1775529802669</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1775529802669</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,7 +341,8 @@
     <MESSAGE value="2-25" />
     <MESSAGE value="3-5일" />
     <MESSAGE value="3-6일 push" />
-    <option name="LAST_COMMIT_MESSAGE" value="3-6일 push" />
+    <MESSAGE value="4-7" />
+    <option name="LAST_COMMIT_MESSAGE" value="4-7" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

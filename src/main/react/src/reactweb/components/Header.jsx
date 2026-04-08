@@ -46,7 +46,8 @@ export default function Header(props) {
 
     return (
         <div>
-            <Link to="/">홈</Link>
+            <Link to="/">홈|</Link>
+            <Link to="/board">게시물</Link>
             {/* 비로그인 메뉴 */}
             {!login && (<>
                 <Link to="/member/login">로그인</Link>
